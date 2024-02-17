@@ -176,7 +176,7 @@ nav i{
 .d1l:hover ,.d2l:hover{
     background: #f2f2f2;
 }
-.main-ul .ul1 a:hover{
+.main-ul .ul1:hover{
     color: var(--blue);
 }
 .hero-content button:hover{
