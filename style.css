@@ -203,7 +203,7 @@ nav i{
     flex-direction: column;
     align-items: center;
 }
-.page-2-head h3{
+.page-2-head h3,.page-4 h3{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -284,11 +284,12 @@ nav i{
     display: flex;
     flex-direction: column;
     width: 70%;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .page-3 .block{
     display: flex;
+    margin: 2.5rem 0;
 }
 
 .page-3 .block .page-content{
@@ -299,14 +300,105 @@ nav i{
 }
 
 .page-3 .block .text{
-    
+    padding-left: 5rem;
+}
+.page-3 .block .text h5{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    width: 80%;
+}
+.page-3 .block .text .page-det{
+    font-size: 0.7rem;
+    width: 80%;
+    padding: 1rem 1rem 1rem 0;
 }
 .page-3 .block .text .card{
     display: flex;
+    border-radius: 2px;
+    width: 70%;
     box-shadow: 1px 2px 5px #343434;
+}
+.page-3 .block .text .card .decore{
+    width: 12px;
+    background: var(--blue);
 }
 .page-3 .block .text .card .page3-card-details{
     display: flex;
     flex-direction: column;
 }
-.page-3 .block .text .card .page3-card-details{}
+.page-3 .block .text .card .page3-card-details .page3-card-name {
+    display: flex;
+    padding: 0.2rem;
+}
+.page-3 .block .text .card .page3-card-details .page3-card-name img{
+    border-radius: 50%;
+    width: 2.5rem;
+    margin: 0.5rem;
+    height: 2.5rem;
+}
+.page-3 .block .text .card .page3-card-details .page3-card-name .cd p{
+    padding: 0.3rem 0 0 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.page-3 .block .text .card .page3-card-details .page3-card-name .cd .card-post{
+    font-weight: 400;
+}
+.page-3 .block .text .card .page3-card-details .page3-card-description{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #868686;
+    padding: 0.5rem 1rem 1rem 1rem ;
+}
+.page-4{
+    height: 90vh;
+    width: 100%;
+    background: #f2f2f2;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-4 .page-4-main{
+    display: flex;
+    width: 70%;
+}
+.page-4 .page-4-main button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--blue);
+    font-size: 0.75rem;
+    color: #f8f8f8;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 1px 5px var(--blue);
+}
+.page-4 .page-4-main button:hover{
+    box-shadow: var(--blue) 0px 3px 15px;
+    transform: translateY(-2%);
+    cursor: pointer;
+}
+.page-4 .page-4-main .page-4-content{
+    width: 50%;
+    
+}
+.page-4 .page-4-main .image img{
+    width: 100%;
+}
+.page-4 .page-4-main .text{
+    display: flex;
+    flex-direction: column;
+}
+.page-4 .page-4-main .text h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.page-4 .page-4-main .text p{
+    font-size: 0.8rem;
+}
+.points i{
+    display: flex;
+    flex-direction: row;
+}
