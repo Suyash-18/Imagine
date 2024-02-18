@@ -696,6 +696,14 @@ nav i{
     width: 40%;
     background: #fff;
 }
+/* Tentetive delete afterwards */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
 
 footer{
     display: flex;
