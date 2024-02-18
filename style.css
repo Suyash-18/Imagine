@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +8,7 @@ body::-webkit-scrollbar{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    inset: 0 0 5px #fff;
+    inset: 0 0 5px #ad0b0b;
 }
 ::-webkit-scrollbar-thumb{
     background: #0000008c;
@@ -41,6 +39,10 @@ body::-webkit-scrollbar{
 }
 .landing-page{
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
@@ -48,12 +50,10 @@ nav{
     height: 10vh;
     position: fixed;
     align-items: center;
+    justify-content: space-evenly;
     background: #fff;
     display: flex;
-    justify-content: space-between;
     z-index: 2;
-    left: 10px;
-
 }
 
 .logo span{
@@ -65,11 +65,11 @@ nav{
     cursor: pointer;
     font-weight: 400;
     font-size: 1.5em;
-    transform: translateX(195%);
+    translate: -3rem;
 }
 
 .option{
-    transform: translateX(-30%);
+    translate: 3rem;
 }
 
 nav li, nav a{
@@ -120,7 +120,7 @@ nav i{
 }
 
 .hero{
-    width: 70vw;
+    width: 70%;
     min-height: 90vh;
     display: flex;
 }
@@ -198,12 +198,12 @@ nav i{
     line-height: 1.5rem;
     margin: 0.5rem 0 0.7rem 0 ;
 }
-.page-2-head{
+.page-2-head, .page-6-head{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.page-2-head h3,.page-4 h3{
+.page-2-head h3,.page-4 h3, .page-5-head h3, .page-6-head h3, .page-7-head h3, .page-8-head h3{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -364,6 +364,7 @@ nav i{
 .page-4 .page-4-main{
     display: flex;
     width: 70%;
+    margin-top: 2rem;
 }
 .page-4 .page-4-main button{
     padding: 10px 20px;
@@ -374,6 +375,7 @@ nav i{
     border: none;
     transition: all 0.5s ease-in-out;
     box-shadow: 0 1px 5px var(--blue);
+    width: fit-content;
 }
 .page-4 .page-4-main button:hover{
     box-shadow: var(--blue) 0px 3px 15px;
@@ -385,20 +387,338 @@ nav i{
     
 }
 .page-4 .page-4-main .image img{
-    width: 100%;
+    width: 120%;
+    height: 100%;
 }
 .page-4 .page-4-main .text{
     display: flex;
+    padding: 1rem 5rem;
     flex-direction: column;
+    margin-left: 5rem;
 }
 .page-4 .page-4-main .text h4{
     font-size: 1.2rem;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 .page-4 .page-4-main .text p{
     font-size: 0.8rem;
+    color: #868686;
 }
-.points i{
+.page-4 .page-4-main .text .check-mark p{
+    position: relative;
+    bottom: 1rem;
+    left: 1.5rem;
+}
+.page-4-main .text i{
+    color: #86bb86;
+    font-size: 0.8rem;
+}
+.check-mark{
+    margin: 2rem 0;
+}
+.page-5{
+    width: 70%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.page-5-head p{
+    width: 55%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #868686;
+    line-height: 1.5rem;
+    margin: 0.5rem 0 0.7rem 0 ;
+}
+.page-5-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.page-5-line{
+    display: flex;
+    justify-content: space-between;
+}
+.page-5-line .emp{
+    font-size: 0.7rem;
+    display: flex;
+    width: 32%;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+.page-5-line .emp .emp-img{
+    height: 60%;
+    overflow: hidden;
+}
+.page-5-line .emp .emp-img .emp-social{
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+}
+.page-5-line .emp .emp-img .emp-social i{
+    padding: 0.8rem 0.3rem;
+}
+.page-5-line .emp .emp-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+.page-5-line .emp .emp-img:hover .emp-social{
+    translate: 0 -2.5rem;
+}
+.page-5-line .emp .emp-img:hover img{
+    scale: 1.1;
+}
+.emp-name{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 1.2rem 0 0.3rem 0;
+}
+.emp-post{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+.emp-details{
+    color: #868686;
+    font-size: 0.8rem;
+}
+.page-6{
+    width: 100%;
+    height: 75vh;
+    background: #f8f8f8;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-6 .slider{
+    width: 70%;
+    height: 60vh;
+    overflow: hidden;
+}
+.page-6 .slider .slide{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.page-6 .slider .slide input{
+    display: none;
+}
+.page-6 .st{
+    display: flex;
+    width: 70vw;
+    transition: 2s;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+.page-6 .nav-m, .page-6 .nav-auto{
+    position: absolute;
+    margin-top: 22rem;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+}
+.page-6 .nav-m .m-btn{
+    border: none;
+    border-radius: 50%;
+    padding: 0.2rem;
+    background: #868686b3;
+    cursor: pointer;
+}
+.page-6 .nav-m .m-btn:not(:last-child){
+    margin-right: 0.5rem;
+}
+.page-6 .nav-m .m-btn:hover{
+    background: var(--blue);
+}
+#radio1:checked ~.first-st{
+    margin-left: 0;
+}
+#radio2:checked ~.first-st{
+    margin-left: -25.45%;
+}
+#radio3:checked ~.first-st{
+    margin-left: -50.45%;
+}
+#radio4:checked ~.first-st{
+    margin-left: -75.7%;
+}
+#radio1:checked ~.nav-m .bt1{
+    visibility: hidden;
+}
+#radio2:checked ~.nav-m .bt2{
+    visibility: hidden;
+}
+#radio3:checked ~.nav-m .bt3{
+    visibility: hidden;
+}
+#radio4:checked ~.nav-m .bt4{
+    visibility: hidden;
+}
+.m-btn:checked{
+    visibility: hidden;
+}
+/* .nav-auto{
+    position: absolute;
+    width: 70%;
+    margin-top: 25rem;
+    display: flex;
+    justify-content: center;
+} */
+.nav-auto div{
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 0.5rem;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background: var(--blue);
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background: var(--blue);
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background: var(--blue);
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background: var(--blue);
+}
+.page-6 .st .page-6-img{
+    width: 6vw;
+    margin-bottom: 1rem;
+}
+.page-6 .st .page-6-img img{
+    box-shadow: 0 1px 3px #373737;
+    border-radius: 50%;
+    width: 100%;
+}
+.page-6 .st .test-text{
+    width: 50vw;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: #868686;
+    text-align: center;
+}
+.page-6 .st .test-name{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.page-7{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+.page-7-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.page-7 .line-card{
+    width: 30%;
+}
+.page-7 .line-card h5{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.page-7 .line-card .line-card-img img{
+    width: 100%;
+}
+.page-7 .line-card ul{
+    translate: 0 -0.5rem;
+}
+.page-7 .line-card ul p{
+    margin-left: 0;
+}
+.page-7 .line-card ul span{
+    font-size: 2rem;
+    color: #868686;
+    position: relative;
+    top: -0.15rem;
+}
+.line-card-text{
+    color: #868686;
+    font-size: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.page-7 .line-card a{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--blue);
+    text-decoration: none;
+}
+.page-7 .line-card ul li, ul p,.line-card ul li a{
+    display: inline;
+    font-size: 0.6rem;
+    color: #868686;
+    margin: 0 3px;   
+}
+.page-7 .line-card:hover img{
+    opacity: 0.8;
+}
+.page-8{
+    height: 130vh;
+    width: 100%;
+    background-image:linear-gradient( to right, #4286f4ba ,rgba(66, 226, 244, 0.686)), url(./assets/bgimg.webp) ;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.page-8-head h3{
+    margin: 3rem 0;
+    color: #fff;
+}
+.page-8 .contact{
+    height: 75%;
+    width: 40%;
+    background: #fff;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer .icons{
+    color: var(--blue);
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer .icons i{
+    margin: 2rem 1rem;
+}
+footer .copy-right{
+    padding-bottom: 2rem;
+    font-size: 0.8rem;
+    color: #868686;
+}
+footer .copy-right span{
+    color: #f00;
+}
+footer .copy-right a{
+    color: var(--blue);
+    text-decoration: none;
 }
