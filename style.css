@@ -321,6 +321,15 @@ nav i{
     width: 80%;
     padding: 1rem 1rem 1rem 0;
 }
+
+.im-1, .im-3, .im-5, .cd-2, .cd-4, .cd-6, .img-1{
+    position: relative;
+    right: 20rem;
+}
+.im-2, .im-4, .im-6, .cd-1, .cd-3, .cd-5{
+    position: relative;
+    left: 20rem;
+}
 .page-3 .block .text .card{
     display: flex;
     border-radius: 2px;
@@ -443,7 +452,7 @@ nav i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     position: relative;
     top: 5rem;
 }
