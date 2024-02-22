@@ -119,7 +119,9 @@ nav i{
     content: '';
     background: var(--blue);
 }
-
+.ul1>a:hover{
+    color: var(--blue);
+}
 .hero{
     width: 70%;
     min-height: 90vh;
